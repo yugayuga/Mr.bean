@@ -1,8 +1,254 @@
 body {
     background-image: url(https://st2.depositphotos.com/1000176/9568/i/950/depositphotos_95682622-stock-photo-old-paper-texture.jpg);
 }
+.cp_cssslider {
+    margin: 2em auto;
+	overflow: -moz-hidden-unscrollable;
+}
+
+.cp_slide_item {
+	width: 300px;
+	height: 200px;
+	float: left;
+	position: relative;
+}
+
+.cp_slidewrapper {
+    width: 500%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 9s infinite ease;/* スピード */
+	
+	
+}@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	20% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	40% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	60% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+    }
+    80% {
+        -webkit-transform: translateX(-1200px);
+        transform: translateX(-1200px);
+        }
+   100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+    }
+
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
+    font-style: italic;
+    color: lightcoral;
+    
+}
+
+h2 {
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 420px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 80px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h4 {
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 260px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h5 {
+    font-size: 40px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 380px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h6 {
+    font-size: 20px;
+    font-style: italic;
+    width: 80px;
+    background-color: rgb(231, 197, 186);
+    width: 70px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+h7 {
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 300px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+h8 {
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 300px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h9 {
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 300px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+
+}
+
+h10 {
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(231, 197, 186);
+    width: 300px;
+    padding: 10px 10px 10px;
+    border-left: 9px solid #4865b2;
+}
+
+
+h11 {
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px 10px 10px;
+    background-color: rgb(255, 221, 255);
+    width: 300px;
+
+}
+
+
+h12 {
+    font-size: 20px;
+    font-style: unset;
+}
+
+.margin-top {
+    margin-top: 64px;
+}
+
+h13 {
+    font-size: 20px;
+}
+
+h14 {
+    font-size: 35px;
+    color: indigo;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-square-pop {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .btn-square-pop:active {
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+  }
+
+  .btn-social-long-twitter {
+    color: #FFF;/*文字・アイコン色*/
+    border-radius: 7px;/*角丸に*/
+    display: inline-block;
+    height: 50px;/*高さ*/
+    width: 320px;/*幅*/
+    text-align: center;/*中身を中央寄せ*/
+    font-size: 20px;/*文字のサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+    background: #1da1f3;
+    overflow: hidden;/*はみ出た部分を隠す*/
+    text-decoration:none;/*下線は消す*/
+  }
+  
+  .btn-social-long-twitter .fa-twitter {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+  }
+  
+  .btn-social-long-twitter span {
+    display:inline-block;
+    transition: .5s;
+  }
+  
+  .btn-social-long-twitter:hover span {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+
+  .btn-bottom-jagged {
+    position: relative;
+    padding: 0.35em 0.7em 0.2em;
+    background: #668ad8;
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  .btn-bottom-jagged:before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    height: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    top: 100%;
+     top: calc(100% - 2px);
+    left: 0;
+    background: linear-gradient(-135deg, #668ad8 4px, transparent 0) 0 4px,
+                linear-gradient(135deg, #668ad8 4px, #fff 0) 0 4px;
+    background-color: #668ad8;
+    background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+  transition: .2s;
+}
+.btn-bottom-jagged:hover:before {
+  background-size: 13px 10px;
 }
 
